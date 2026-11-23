@@ -71,6 +71,9 @@ Les trois contrôles, systématiques :
 > [!TIP]
 > **Première mise en service : la boucle complète a fonctionné du premier coup.** Deux propositions détectées au démarrage de session, contrôlées par l'agent relecteur, fiches présentées spontanément, décisions prises, promotion tracée dans Git — zéro intervention manuelle.
 
+> [!NOTE]
+> **Évolution du 20 novembre 2026.** Le relecteur ne modifie jamais un fichier du dépôt de référence : sa fiche de décision est donnée dans la conversation, l'humain la transmet, et la décision est tracée par le commit de promotion. Avant toute récupération du dépôt, l'agent vérifie qu'aucun de ses fichiers n'est modifié et n'utilise qu'une mise à jour sans réécriture de l'historique. *Pourquoi :* ses fiches, écrites dans des fichiers sans commit, étaient détruites à la récupération suivante, et deux copies du dépôt divergeaient.
+
 ---
 
 ## 🧭 « Pointeur, pas copie »

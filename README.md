@@ -20,6 +20,18 @@
 
 ---
 
+## 🗺️ Les six briques d'un système d'IA gouverné, en une image
+
+<div align="center">
+
+[![Comment j'encadre l'IA : LLM, RAG, MCP, Skills, système d'agents, garde-fous](docs/comment-j-encadre-l-ia.png)](docs/comment-j-encadre-l-ia.pdf)
+
+📄 [Version PDF cliquable](docs/comment-j-encadre-l-ia.pdf) · chaque brique renvoie vers ses explications et, quand il existe, vers l'outil en ligne.
+
+</div>
+
+---
+
 ## 💡 L'idée en 30 secondes
 
 J'ai construit une infrastructure IA personnelle dont le cœur n'est pas la technique, mais la **gouvernance** :
@@ -94,7 +106,7 @@ flowchart TB
     TG <--> H
     H -- "🔒 API lecture seule" --> N8N
     CC <--> OBS
-    H -. "propositions<br/>(zone tampon)" .-> OBS
+    H -. "fiches de relecture<br/>(jamais d'écriture directe)" .-> OBS
 
     class TG,OBS,CC humain
     class H,N8N agent
@@ -141,12 +153,25 @@ flowchart LR
 | 📋 [Journal de décisions](docs/decisions.md) | 9 décisions d'architecture au format ADR — le *pourquoi* derrière chaque choix |
 | 💸 [Coûts](docs/couts.md) | L'économie réelle d'une infra IA personnelle : calibrage mesuré, pièges, règles d'efficience |
 
+## 🔄 Mise à jour de novembre 2026
+
+Depuis la mise en service de juin, le système a évolué. Ce qui a changé :
+
+- 🧠 **Le cerveau de l'agent** : DeepSeek par défaut, Claude Sonnet réservé aux moments à enjeu (relecture, sécurité). La bascule est manuelle.
+- 🔍 **Recherche documentaire (RAG) et base de données auto-hébergées**, utilisées par les projets VetCare Plus et Echo.
+- 💾 **Sauvegardes chiffrées hors du serveur**, chaque nuit, avec alerte en cas d'échec.
+- ⚖️ **Règle du 20 novembre** : l'agent relecteur ne modifie plus aucun fichier du dépôt de référence. Il donne sa fiche de décision dans la conversation, l'humain la transmet, et la décision est tracée par le commit de promotion (voir [la gouvernance](docs/gouvernance.md)).
+- 🏗️ **Projets livrés avec cette méthode** : [VetCare Plus](https://github.com/VincentG32/vetcare-plus) ([démo](https://vetcare.vincentgranouillit.com)) et [Echo](https://github.com/VincentG32/echo-projet) ([en ligne](https://echo.vincentgranouillit.com)). Le système d'agents [Solo Builder](https://github.com/VincentG32/solo-builder-ai) est conçu, sa construction est en cours.
+- 🌙 **En préparation** : un mode autopilote, où l'IA avance en mon absence, avec une règle intangible : rien n'est mis en ligne sans mon accord.
+
+---
+
 ## 🚀 Statut & suite
 
-🟢 **Opérationnelle** (montée en juin 2026) et en évolution continue. Prochaines étapes : veille automatisée (digest quotidien sur mobile), délégation de développement à un agent codeur, étude d'un rapatriement sur machine locale.
+🟢 **Opérationnelle** (montée en juin 2026) et en évolution continue. Prochaines étapes : mode autopilote encadré, poursuite de la construction du système d'agents Solo Builder, étude d'un rapatriement sur machine locale.
 
 ## 👤 À propos
 
 Je suis **Vincent Granouillit** — Delivery Manager / Chef de projet (France & Suisse), en route vers le *product building* augmenté à l'IA. Cette infra est à la fois mon outil quotidien et ma preuve de concept : **la gouvernance du delivery appliquée aux systèmes d'agents.**
 
-🔗 **[vincent-granouillit.vercel.app](https://vincent-granouillit.vercel.app)**
+🔗 **[vincentgranouillit.com](https://vincentgranouillit.com)**

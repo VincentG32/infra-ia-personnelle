@@ -7,6 +7,9 @@
 ![Construction](https://img.shields.io/badge/construction_intensive-≈100$%2Fmois-f59e0b?style=for-the-badge)
 ![Dérive évitée](https://img.shields.io/badge/dérive_évitée-≈200$%2Fmois-ef4444?style=for-the-badge)
 
+> [!WARNING]
+> **Mesures de juin 2026**, faites avec Claude Sonnet via l'API. Depuis, mon agent tourne par défaut sur DeepSeek, avec Claude Sonnet en réserve : les ordres de grandeur ci-dessous sont à réactualiser. Les règles de gouvernance, elles, restent valables.
+
 ---
 
 ## 📏 Le calibrage mesuré
