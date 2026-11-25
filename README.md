@@ -161,14 +161,14 @@ Depuis la mise en service de juin, le système a évolué. Ce qui a changé :
 - 🔍 **Recherche documentaire (RAG) et base de données auto-hébergées**, utilisées par les projets VetCare Plus et Echo.
 - 💾 **Sauvegardes chiffrées hors du serveur**, chaque nuit, avec alerte en cas d'échec.
 - ⚖️ **Règle du 20 novembre** : l'agent relecteur ne modifie plus aucun fichier du dépôt de référence. Il donne sa fiche de décision dans la conversation, l'humain la transmet, et la décision est tracée par le commit de promotion (voir [la gouvernance](docs/gouvernance.md)).
-- 🏗️ **Projets livrés avec cette méthode** : [VetCare Plus](https://github.com/VincentG32/vetcare-plus) ([démo](https://vetcare.vincentgranouillit.com)) et [Echo](https://github.com/VincentG32/echo-projet) ([en ligne](https://echo.vincentgranouillit.com)). Le système d'agents [Solo Builder](https://github.com/VincentG32/solo-builder-ai) est conçu, sa construction est en cours.
-- 🌙 **En préparation** : un mode autopilote, où l'IA avance en mon absence, avec une règle intangible : rien n'est mis en ligne sans mon accord.
+- 🏗️ **Projets livrés avec cette méthode** : [VetCare Plus](https://github.com/VincentG32/vetcare-plus) ([démo](https://vetcare.vincentgranouillit.com)) et [Echo](https://github.com/VincentG32/echo-projet) ([en ligne](https://echo.vincentgranouillit.com)). Le système d'agents [Solo Builder](https://github.com/VincentG32/solo-builder-ai) est conçu, ses 14 agents sont spécifiés.
+- 🌙 **Mode autopilote, opérationnel depuis le 24 novembre** : l'IA avance en mon absence et dépose son travail en demandes de fusion, que je valide au réveil. Règle intangible : rien n'arrive en production ni en ligne sans mon accord, et c'est GitHub qui le bloque. Premier run : 13 demandes de fusion en une nuit, aucune alerte rouge.
 
 ---
 
 ## 🚀 Statut & suite
 
-🟢 **Opérationnelle** (montée en juin 2026) et en évolution continue. Prochaines étapes : mode autopilote encadré, poursuite de la construction du système d'agents Solo Builder, étude d'un rapatriement sur machine locale.
+🟢 **Opérationnelle** (montée en juin 2026) et en évolution continue. Prochaines étapes : architecture modulaire du système d'agents Solo Builder (socle commun, briques, chaînes), branchement d'autres projets sur le mode autopilote, étude d'un rapatriement sur machine locale.
 
 ## 👤 À propos
 
